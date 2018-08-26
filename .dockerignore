@@ -4,3 +4,5 @@ erlang.mk
 .erlang.mk
 hello_erlang.d
 _rel
+.git
+.gitignore
