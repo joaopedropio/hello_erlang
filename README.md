@@ -27,10 +27,9 @@ $ make run
 
 ### Docker
 
-If you prefer running your applications with Docker, just build the images with:
+If you prefer running your applications with Docker, just build the image with:
 ```
 docker build -t hello_erlang .
-
 ```
 
 And run the container:
