@@ -1,6 +1,6 @@
 #  Hello Erlang
 
-This project is just a simple example of a Erlang server using Cowboy.
+This project is just a simple example of a [Erlang](https://www.erlang.org/) server using [Cowboy](https://github.com/ninenines/cowboy).
 
 ### Prerequisites
 
