@@ -25,4 +25,17 @@ And finally, run the application:
 $ make run
 ```
 
+### Docker
+
+If you prefer running your applications with Docker, just build the images with:
+```
+docker build -t hello_erlang .
+
+```
+
+And run the container:
+```
+ docker run --name he -d -p 8080:8080 hello_erlang
+```
+
 Access **[http://localhost:8080/hello](http://localhost:8080/hello)** to see it running.
