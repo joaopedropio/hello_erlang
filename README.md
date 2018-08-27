@@ -4,37 +4,28 @@ This project is just a simple example of a [Erlang](https://www.erlang.org/) ser
 
 ### Prerequisites
 
-This project only requires Erlang:
+This project requires:
 * **[Erl](http://erlang.org/doc/installation_guide/users_guide.html)**
+* **[Rebar3](https://www.rebar3.org/)**
 ### Installing and Running
 
-Erlang.mk is a build tool for Erlang projects
+Rebar is a build tool for Erlang projects.
 
-To run this project is necessary to download Erlang.mk:
+To run the application:
 ```
-$ wget https://erlang.mk/erlang.mk
-```
-
-Run the following command to build the application:
-```
-$ make
-```
-
-And finally, run the application:
-```
-$ make run
+$ rebar3 shell
 ```
 
 ### Docker
 
 If you prefer running your applications with Docker, just build the image with:
 ```
-docker build -t hello_erlang .
+$ docker build -t hello_erlang .
 ```
 
 And run the container:
 ```
- docker run --name he -d -p 8080:8080 hello_erlang
+ $ docker run --name hello -d -p 8080:8080 hello_erlang
 ```
 
 Access **[http://localhost:8080/hello](http://localhost:8080/hello)** to see it running.
