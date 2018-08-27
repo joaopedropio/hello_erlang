@@ -6,3 +6,6 @@ hello_erlang.d
 _rel
 .git
 .gitignore
+_build
+README.md
+out
