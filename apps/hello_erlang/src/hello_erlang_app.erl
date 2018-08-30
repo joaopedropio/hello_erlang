@@ -5,8 +5,10 @@
 -export([stop/1]).
 
 start(_Type, _Args) ->
+    application:ensure_all_started(mongodb),
     Dispatch = cowboy_router:compile([
         {'_', [
+			{"/user", user_handler, []},
 			{"/manga", manga_handler, []},
 			{"/", home_handler, []}
 		]}
